@@ -13,7 +13,8 @@ class CategoriesScreen extends StatelessWidget {
         body: GridView(
           padding: const EdgeInsets.all(25),
           children: DUMMY_CATEGORIES
-              .map((ctData) => CategoryItem(ctData.title, ctData.color))
+              .map((ctData) =>
+                  CategoryItem(ctData.id, ctData.title, ctData.color))
               .toList(),
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 200,
